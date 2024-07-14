@@ -1,24 +1,14 @@
-E-Learning Platform with Django
+E-Learning Website
 ===============================
 
 Description
 -----------
-This project is an e-learning platform built using Django. It allows users to enroll in courses, access course materials, take quizzes, and track their progress.
-
+A full-fledged E-Learning website that allows clients to register and purchase courses and allows administrators to upload courses. Makes use of Django and SQLite3
 Features
 --------
 - User authentication and authorization
 - Course enrollment and management
 - Uploading and viewing course materials (videos, documents)
-- Quiz and assessment functionality
-- Chatbot new feature
-
-Installation
-------------
-1. Clone the repository: `git clone https://github.com/your_username/your_project.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run migrations: `python manage.py migrate`
-4. Start the development server: `python manage.py runserver`
 
 Usage
 -----
@@ -27,6 +17,3 @@ Usage
 3. Users can register, enroll in courses, and access course materials via the front-end interface.
 
 
-Contact
--------
-For questions or feedback, contact me at soundargcd6@gmail.com.
