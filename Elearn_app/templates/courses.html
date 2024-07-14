@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <title>Elearn</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="logo"><h2>Adira<span>Leadership Academy</span></h2></div>
+    <div class="nav">
+        <a href="{% url 'home' %}
+ " >HOME</a>
+        <a href="{% url 'about' %}
+ ">ABOUT</a>
+        <a href="{% url 'courses' %}" class='actives'
+ >COURSES</a>
+
+      
+        <a href="{% url 'contact' %}
+ ">CONTACT</a>
+               {% if  user.is_authenticated %}
+ <a   href="{% url 'logout' %}"> <h2 class="fa-solid fa-right-from-bracket"></h2>
+
+ </a>
+ <i style='padding-left: 30px;' id='cart' class="fa-solid fa-cart-shopping"></i>
+ {% else %}
+ <a href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+
+ </a>
+ {% endif %}
+
+    </div>
+    <div class='side'><i class="fa-solid fa-bars"></i></div>
+
+    </div>
+
+    
+    <div class="main">
+        <div class="contact-header">
+       <div class="contact-container">
+           <div class="contact-intro">
+               <h1>Courses</h1>
+           </div>
+        </div>
+        
+       </div>
+
+<div class="courses-title">
+    
+    <h6 >CATEGORIES</h6>
+    <h1 >What we offer</h1>
+</div>
+
+<div class="main-course">
+    <div class="categorise">
+        <div class="items">
+            <img src="{% static 'img\cat1.png' %}" alt="">
+            <h5><a href="#" >Microsoft Excel</a>
+            </h5>
+        </div>
+        <div class="items">
+            <img src="{% static 'img\cat2.png' %}" alt="">
+            <h5><a href="#" >Aws</a>
+            </h5>
+        </div><div class="items">
+            <img src="{% static 'img\cat3.png' %}" alt="">
+            <h5><a href="#" >Python</a>
+            </h5>
+        </div><div class="items">
+            <img src="{% static 'img\cat4.png' %}" alt="">
+            <h5><a href="#" >Java</a>
+            </h5>
+        </div><div class="items">
+            <img src="{% static 'img\cat5.png' %}" alt="">
+            <h5><a href="#" >Web Design</a>
+            </h5>
+        </div><div class="items">
+            <img src="{% static 'img\cat6.png' %}" alt="">
+            <h5><a href="#" >Web Development</a>
+            </h5>
+        </div>
+        <div class="items">
+            <img src="{% static 'img\cat7.png' %}" alt="">
+            <h5><a href="#" >MySql</a>
+            </h5>
+        </div><div class="items">
+            <img src="{% static 'img\cat8.png' %}" alt="">
+            <h5><a href="#" >UI/UX Design</a>
+            </h5>
+        </div>
+        </div>
+        
+</div>
+
+
+<div class="courses-head">
+    
+    <h6 >POPULAR COURSES</h6>
+    <h1 >Explore new and trending free online courses</h1>
+</div>
+
+
+<div class='course-head'>
+    <div class="course-main">
+
+        {% for course in courses %}
+
+
+            <div class="course-item">
+                <img src="{% static 'img/' %}{{ course.course_img }}.jpg" alt="">
+                       
+                <h2>{{course.course_title}}<a style='width: 80px;text-decoration:none' href="{{ course.course_link }}">Go>></a>
+                </h2>
+                <div class="items-list">
+                    
+                <div><i class="fa-solid fa-star" style="color: #FFD43B;"></i><br><span>4.4</span></div>
+                <div> <i class="fa-solid fa-user-tie"></i><span>5.8l+<br>learners</span></div>
+                <div><i class="fa-solid fa-user"></i><span>Beginners</span></div>
+                </div>
+                <div class='items-list'>
+                    <div><i class="fa-regular fa-clock"><span>2.0 Hrs</span></i></div>
+                    <div><i class="fa-solid fa-dollar-sign"><span>{{course.course_amount}}</span></i></div>
+                    <div>
+                        
+                <a href="{% url 'enroll' course.id %}">Enroll Now</a>
+                        
+                        {% comment %} <button style="width: 100px;background-color:#fb873f ;padding:8px;border:none" type="submit" {{courses.course_id}}>Enroll</button> {% endcomment %}
+                        </div>
+                </div>
+          
+    
+       
+                
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+<!-- <div class='cart-popup'>
+    <div class=cart-popup-flex><i id='cart1' class="fa-solid fa-xmark"></i><h1>  My Enrolled Courses</h1></div> -->
+<ul> 
+{% for my_course in my_courses %}
+
+    <li>
+        <a href="{{my_course.course.course_link}}">{{ my_course.course.course_title }}</a>
+        
+    </li>
+{% empty %}
+    <li>No courses enrolled.</li>
+{% endfor %}
+</ul></div>
+    <script src='script.js'></script>
+    <script src='{% static "js/popup.js" %}'></script>
+
+
+
+</body>
+</html>

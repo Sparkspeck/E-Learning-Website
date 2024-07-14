@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <title>Elearn</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="logo"><h2>Adira<span>Leadership Academy</span></h2></div>
+    <div class="nav">
+        <a href="{% url 'home' %}" >HOME</a>
+        <a href="{% url 'about' %}" class='actives'>ABOUT</a>
+        <a href="{% url 'courses' %}">COURSES</a>
+
+        <a href="{% url 'contact' %}">CONTACT</a>
+        
+        <a href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+    </div>
+    <div class='side'><i class="fa-solid fa-bars"></i></div>
+</div>
+    </div>
+
+    <div class="login-header">
+        <div class="login-container">
+            <div class="login-intro">
+                <h1>About Us</h1>
+    
+            </div>
+         </div>          
+
+                <div class="about">
+                    <h2>Welcome to Adira Leadership Academy</h2>
+                    <p >
+                        We believe in accessible, innovative learning experiences that adapt to your
+                        schedule and learning style. Join us in embracing the future of education and unlock your
+                        potential with our immersive online courses.
+                    </p>
+                    <h3 >Our Vision</h3>
+                    <p> We envision a world where learning is accessible to everyone,
+                        regardless of their location, background, or circumstances. We strive to break barriers and make
+                        education a transformative and inclusive experience for all.</p>
+
+                    <h3 >A Commitment to Excellence</h3>
+                    <p > We are dedicated to providing top-quality education. Our team collaborates with
+                        industry experts and educators to curate courses that meet the highest standards, ensuring our
+                        learners receive valuable and up-to-date knowledge.</p>
+
+                    <h3 >Empowering Learners</h3>
+
+                    <p >We believe in the transformative power of education. Elearning is
+                        designed to empower individuals to pursue their passions, advance their careers, and acquire new
+                        skills in a dynamic and supportive environment.</p>
+
+                    <h3 >Innovation in Learning</h3>
+
+                    <p >Embracing technology, we offer innovative learning methods and tools. From
+                        interactive modules to live sessions, we're committed to providing a cutting-edge learning
+                        experience that fosters engagement and knowledge retention.</p>
+
+                    <h3 >Community-Centric Approach</h3>
+
+                    <p > Our learning academy is more than just courses; it's a vibrant community. We
+                        encourage collaboration, discussion, and knowledge sharing among learners, fostering an
+                        environment of growth and camaraderie.</p>
+
+                    <h3 >Diverse and Inclusive Education</h3>
+
+                    <p >We celebrate diversity in perspectives, cultures, and ideas. Our diverse course
+                        offerings cater to various interests and skill levels, ensuring that everyone finds a learning
+                        path that resonates with them.</p>
+
+                    <h3 >Continuous Improvement</h3>
+
+                    <p >We are always evolving. Feedback from our learners helps us continually enhance our
+                        platform, ensuring it remains dynamic, responsive, and aligned with the evolving needs of our
+                        users.</p>
+
+                </div>
+
+    <script src='{% static "js/script.js" %}'></script>
+
+
+</body>
+</html>

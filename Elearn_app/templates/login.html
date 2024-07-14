@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <title>Elearn</title>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="logo">
+            <div class="logo"><h2>Adira<span>Leadership Academy</span></h2></div>
+        </div>
+        <div class="nav">
+            <a href="{% url 'home'  %}">HOME</a>
+            <a href="{% url 'about' %}">ABOUT</a>
+            <a href="{% url 'courses' %}">COURSES</a>
+
+
+            <a href="{% url 'contact' %}">CONTACT</a>
+            <a href="{% url 'login' %}" class='actives'><i class="fa fa-user"></i></a>
+        </div>
+        <div class='side'><i class="fa-solid fa-bars"></i></div>
+
+
+    </div>
+    <div class="login-header">
+        <div class="login-container">
+            <div class="login-intro">
+               
+                
+            </div>
+        </div>
+
+        <div class="login-form">
+            <form method='post' action="login">
+                {% csrf_token %}
+                <div class='login'>
+                    <h1>Login</h1>
+                    <div class="">
+                        <input type="email" class="form-control" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    
+
+                    <div class="">
+                        <button type="submit">Login</button>
+                    </div>
+                    <p style='color:red'>{{error}}</p>
+
+                    <div class="">
+                        <p>Don't have an account? <a class="text-decoration-none" href="{% url 'signup' %}">Signup</a>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </form>
+
+    </div>
+
+    <script src='{% static "js/script.js" %}'></script>
+
+</body>
+
+</html>

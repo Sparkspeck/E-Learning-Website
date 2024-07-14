@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <title>Elearn</title>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="logo">
+            <div class="logo"><h2>Adira<span>Leadership Academy</span></h2></div>
+        </div>
+        <div class="nav">
+            <a href="{% url 'home' %}" >HOME</a>
+            <a href="{% url 'about' %}">ABOUT</a>
+            <a href="{% url 'courses' %}" class='actives'>COURSES</a>
+
+
+            <a href="{% url 'contact' %}">CONTACT</a>
+            <a href="{% url 'quiz' %}
+ ">QUIZ</a>
+            <a href="{% url 'login' %}"><i class="fa fa-user"></i></a>
+        </div>
+        <div class='side'><i class="fa-solid fa-bars"></i></div>
+    </div>
+    </div>
+
+    <div class="coures-head1" >
+        <div class="course-detail">
+
+            <h2>Html Courses For Beginners</h2>
+
+            <p>Master Figma app to get a job in UI Design, User Interface,
+                User Experience design, <br>Web Design & UX design.</p>
+            <div class='categorise-flex'> <span><img src="" alt="">
+                </span><span>
+                    Created by <br>
+                    Alison Dawn
+                </span>
+                <span>
+                    Categories <br>
+                    Design
+                </span><span>
+                    Review <br>
+                    9.45 (9.8k+ reviews)
+                </span><span>
+
+                </span>
+            </div>
+            <div class="video">
+                <img src="{% static 'img\course-1.jpg' %}" width="100%" alt="">
+            </div>
+        </div>
+
+
+        <div class="enroll" >
+            <div class='enroll-details ' >
+                <h2>$98
+                    <span>339.99</span>
+                </h2>
+                <span>91 % off</span>
+            </div>
+
+            <h3><i class="fa-solid fa-hourglass-half" style="color: #e90707;"></i> 2 days left at this price!</h3>
+            <div class="btn">
+                <form action="#" method="">
+                    {% csrf_token %}
+                    <button type='submit'>ENROLL</button>
+                </form>
+            </div>
+            <div class='enroll-list'>
+                <ul>
+                    <li><span><i class="fa-regular fa-clock"></i>
+                            Duration
+                        </span><span> 43 weeks</span></li>
+                    <li><span><i class="fa-solid fa-book-open" style="color: #a6adba;"></i> Lectures
+                        </span><span>32</span></li>
+                    <li><span><i class="fa-regular fa-circle-check"></i> Enrolled
+                        </span><span>1982 students</span></li>
+                    <li><span><i class="fa-solid fa-language" style="color: #06050a;"></i> Language
+                        </span><span>English</span></li>
+                    <li><span><i class="fa-solid fa-atom"></i> Skill level
+                        </span><span>beginner</span></li>
+                    <li><span><i class="fa-solid fa-calendar-xmark" style="color: #000000;"></i> Deadline
+                        </span><span>06 April 2020</span></li>
+                    <li><span><i class="fa-solid fa-certificate"></i> Certificate
+                        </span><span>Yes</span></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class='course-nav'>
+        <p class='course1 active' href="">Overview</p>
+        <p class='course2' href="">Curriculum</p>
+        <p class='course3' href="">Instructor</p>
+        <p class='course4' href="">Reviews</p>
+
+
+    </div>
+    <div class='c-main'>
+        <div class='c1'>
+            <h3>Course Description</h3>
+            <p>Do you want to become a UI/UX designer but you don't know where to start?
+                This course will allow you to develop your user interface design skills and you
+                can add UI designer to your CV and start getting clients for your skills.
+
+            </p>
+            <p>
+                Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you
+                learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant
+                tool for User
+
+                Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb,
+                Facebook, etc.
+            </p>
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente I will help
+                you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant
+                tool for User Interface design.
+                It's used by everyone from entrepreneurs ea proident.</p>
+        </div>
+        <div class='c2'>
+            <div class="c2-course">
+                <h2 class='plus'><i class="fa-solid fa-minus"></i> Indroduction</h2>
+                <ul class='add'>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Introduction to the course</div> <span> 30 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Introduction</div> <span> 5 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Structure of the course</div> <span> 10 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Required Tools </div><span> 15 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Get Your Free E-book </div><span> 30 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="c2-course">
+                <h2 class='plus1'><i class="fa-solid fa-minus"></i> Design Basics</h2>
+                <ul class='add1'>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Introduction to the course</div> <span> 30 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Introduction</div> <span> 5 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Structure of the course</div> <span> 10 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Required Tools </div><span> 15 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                    <li>
+                        <div><i class="fa-regular fa-file-lines"></i> Get Your Free E-book </div><span> 30 min <i
+                                class="fa-solid fa-play"></i></span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class='c3'>
+            <h2>About The Instructor</h2>
+            <div class='instructor-dt'>
+                <div><img src="" alt=""></div>
+                <div>
+                    <h2>Lauren Handerson</h2>
+                    <p>iOS Developer & UI Designer
+                    </p>
+                </div>
+
+            </div>
+            <p class='c3-p'><span><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 4.87 Instructor rating</span>
+                <span>1,533 reviews</span>
+                <span> 23,912 students</span>
+                <span>29 courses</span>
+            </p>
+            <p>I am a UI/UX designer and an iOS developer with having almost six years of experience
+                in application development and also ten years of graphic design and User Interface design.
+
+            </p>
+            <p>My passion is helping people to learn new skills in a short-term course and achieve their
+                goals. I've been designing for more than ten years and developing iOS apps for four years.
+                It's my honor if I could help you learn to program in a simple word. I currently am teaching iOS 13,
+                Swift 5, ARKit 3, Sketch 5, Illustrator, Photoshop, Cinema 4D, HTML, CSS, JavaScript, etc.</p>
+        </div>
+        <div class='c4'>
+            <h2>Student feedback</h2>
+            <div class="feedback-main">
+                <div class="feedback1">
+                    <h1>4.93</h1>
+                    <h2>Course Rating</h2>
+                    <h3><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                            style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                            style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </h3>
+                </div>
+                <div class="feedback2">
+                    <div class=feedback2-flex>
+                        <p class='p1'></p>
+                        <h3><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </h3>
+                        <span>4132</span>
+                    </div>
+                    <div class=feedback2-flex>
+                        <p class='p2'></p>
+                        <h3><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </h3>
+                        <span>2132</span>
+                    </div>
+                    <div class=feedback2-flex>
+                        <p class='p3'> </p>
+                        <h3><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </h3>
+                        <span>532</span>
+                    </div>
+                    <div class=feedback2-flex>
+                        <p class='p4'></p>
+                        <h3><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </h3>
+                        <span>103</span>
+                    </div>
+                    <div class=feedback2-flex>
+                        <p class='p5'></p>
+                        <h3><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+                                style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </h3>
+                        <span>10</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class='feedbacks'>
+                <h2>Oscar Cafeo</h2>
+                <h4>it's helpful</h4>
+                <p>This course was well organized and covered a lot more details than any other Figma courses.
+                    I really enjoy it. One suggestion is that it can be much better if we could complete the prototype
+                    together
+                    . Since we created 24 frames, I really want to test it on Figma mirror to see all the connections.
+                    Could
+                    you please let me take a look at the complete prototype?</p>
+                <h2>Alex Morgan</h2>
+                <h4>it's good</h4>
+                <p>This course was well organized and covered a lot more details than any other Figma courses.
+                    I really enjoy it. One suggestion is that it can be much better if we could complete the prototype
+                    together
+                    . Since we created 24 frames, I really want to test it on Figma mirror to see all the connections.
+                    Could
+                    you please let me take a look at the complete prototype?</p>
+
+                {% for feed in feedbackdel %}
+                <h2>{{feed.fe_name}}</h2>
+                <h4>{{feed.fe_review}}</h4>
+                <p>{{feed.fe_condent}}</p>
+                {% endfor %}
+
+            </div>
+
+            <div>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class='feedback-form'>
+                        <h3>Feedback Form</h3>
+                        <label for="">Your name</label>
+                        <input name='fe-name' type="text">
+                        <label for="">Review Title</label>
+                        <input name='fe-review' type="text">
+                        <label for="">Review Condent</label>
+                        <textarea name="fe-condent" id=""></textarea>
+                        <button type='submit'>Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+
+
+
+    <script src='{% static "js/javascript.js" %}'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+
+.chatbot{
+    left: 0%;
+  position: relative;
+  
+}
+.input-main.remove{
+    display: block;
+
+}
+
+.input-main{
+    position: absolute;
+    display: none;
+    top: 70px;
+    z-index: 1;
+ right: 150px;
+    width: 25%;
+    height: 400px;
+    text-align: center;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 5px solid aliceblue;
+    overflow: scroll;
+ font-size: 15px;
+
+}
+.popup{
+    position:fixed;
+   top: 500px;
+   z-index: 1;
+right: 80px;
+}
+
+.popup h1 i{
+    text-align: center;
+    border-radius: 100%;
+    color: aliceblue;
+    padding: 10px 15px;
+    font-size: 35px;
+    background-color: #fb873f;
+    transition: all 2s ease;
+}
+.popup h1 i:hover{
+    color:black;
+    
+}
+.input{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 240px;
+    align-items: center;
+    background-color: transparent;
+
+}
+.input input{
+   background-color: transparent;
+    padding: 5px;
+    border:none;
+    flex-basis: 90%;
+    outline: none;
+}
+
+.input i{
+    flex-basis: 10%;
+    font-size: 20px;
+}
+
+
+.input-value{
+padding: 10px;
+overflow-y: scroll;
+height: 310px;
+}
+
+.input-value ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.outgoing {
+    text-align: start;
+    font-size:15px;
+    
+    
+   
+}
+.incoming{
+    text-align: end;
+  overflow-wrap: break-word;
+
+
+}
+
+
+.chat li{
+list-style-type: none;
+}
+
+  
+  #searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  #tagsContainer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #tagsContainer div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  #tagsContainer p {
+    margin: 0;
+  }
+  .main{
+  
+    width: 300px;
+    max-width: 500px;
+    height: auto;
+    min-height: 100px;
+    overflow: scroll;
+    word-wrap: break-word;
+    
+  
+  }

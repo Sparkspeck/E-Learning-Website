@@ -1,0 +1,1116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+.logo {
+    margin-left: 50px;
+
+}
+
+.nav {
+    margin-right: 50px;
+
+}
+
+.logo h2 {
+    color: orangered;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.logo span {
+    font-size: 30px;
+
+    color: black;
+}
+
+.side {
+    display: none;
+}
+
+.contain {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px black;
+
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 50px;
+    color: black;
+}
+
+.nav a:hover {
+    color: orangered;
+}
+
+.nav .actives {
+    color: orangered;
+}
+
+.header {
+    background-image: url("../img/carousel-1.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+    position: relative;
+
+}
+
+.header::before {
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.562);
+
+}
+
+.condent {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.condent h5 {
+    font-size: 25px;
+    font-weight: 300;
+    color: orangered;
+    text-shadow: 1px 1px 1px orangered;
+    padding-bottom: 10px;
+}
+
+.condent h1 {
+    font-size: 60px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+.condent p {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.btns {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+
+.btns #one {
+    background-color: orangered;
+    color: white;
+    transition: all 1s ease;
+    text-decoration: none;
+    padding: 18px 40px;
+}
+
+.btns #two {
+    background-color: whitesmoke;
+    color: orangered;
+    transition: all 1s ease;
+    text-decoration: none;
+    padding: 18px 40px;
+
+}
+
+.btns #one:hover {
+    background-color: transparent;
+    border: 1px solid orangered;
+
+
+}
+
+.btns #two:hover {
+    background-color: transparent;
+    border: 1px solid white;
+
+
+}
+
+.contact-header {
+
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-header::before {
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 68, 0, 0.432);
+
+}
+
+.contact-header h1 {
+    position: relative;
+    font-size: 50px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.contact-container {
+    position: relative;
+}
+
+.contact-link .actives {
+    color: orangered;
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    padding: 5px;
+}
+
+.contact-main {
+    text-align: center;
+}
+
+.contact-title h2 {
+    position: relative;
+    top: 50px;
+    font-size: 40px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    color: black;
+
+}
+
+.divide {
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.contact-information {
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-information h5 {
+
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contact-information p {
+    font-size: 15px;
+    text-align: justify;
+    width: 600px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.item i {
+    padding: 20px;
+    width: 60px;
+    border: 1px solid white;
+
+    transition: all 1s ease;
+    text-align: center;
+    background-color: rgba(255, 68, 0, 0.63);
+    color: white;
+}
+
+.item i:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.contact-get {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-get .data-one input {
+
+    width: 48%;
+    padding: 20px 40px;
+
+}
+
+.contact-get .data-two input {
+
+    width: 97%;
+    padding: 20px 40px;
+
+}
+
+.contact-get .data-three textarea {
+
+    width: 97%;
+    padding: 20px 40px;
+
+}
+
+.contact-get .data-last button {
+
+    width: 97%;
+    padding: 20px 40px;
+    background-color: orangered;
+    border: 1px solid black;
+    color: white;
+    font-size: 18px;
+    transition: all 1s ease;
+
+}
+
+.contact-get .data-last button:hover {
+
+    background-color: transparent;
+    color: orangered;
+
+}
+
+
+
+
+
+.login-header {
+
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-header::before {
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 68, 0, 0.432);
+
+}
+
+.login-header h1 {
+    position: relative;
+    font-size: 50px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.contact-container {
+    position: relative;
+}
+
+.login-link .actives {
+    color: orangered;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: 10px;
+    left: 9px;
+    padding: 5px;
+}
+
+.login-form {
+    position: absolute;
+    top: 300px;
+
+}
+
+.login-form input {
+
+    width: 500px;
+    height: 50px;
+    padding: 20px 20px;
+}
+
+.login {
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+    padding: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login-form h1 {
+    color: orangered;
+    font-size: 40px;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: rgb(51, 240, 177);
+}
+
+.login-form button {
+
+    width: 500px;
+    padding: 15px 20px;
+    background-color: orangered;
+    border: 1px white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.signup {
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    height: 90vh;
+    padding: 50px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    position: absolute;
+    top: 300px;
+
+}
+
+.signup-form a {
+    text-decoration: none;
+}
+
+.signup-form h1 {
+    color: orangered;
+    font-size: 40px;
+}
+
+.signup-form input {
+
+    width: 500px;
+    height: 50px;
+    padding: 20px 20px;
+}
+
+.signup-form button {
+
+    width: 500px;
+    padding: 15px 20px;
+    background-color: orangered;
+    border: 1px white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+/***** Section *****/
+/***** End Section *****/
+.courses-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.courses-title h6 {
+    font-size: 20px;
+    font-weight: 400;
+    font-variant: normal;
+    color: black;
+}
+
+.courses-title {
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    color: #fb873f;
+}
+
+.main-course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.categorise {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    gap: 30px;
+}
+
+.items {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    transition: all 1s ease;
+}
+
+.items a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.items:hover {
+    color: white;
+    background-color: rgba(255, 68, 0, 0.719);
+}
+
+.items a:hover {
+    color: white;
+}
+
+.items img {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+.courses-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.courses-head h6 {
+    font-size: 20px;
+    font-weight: 400;
+    font-variant: normal;
+    color: black;
+}
+
+.courses-head {
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fb873f;
+}
+
+.items-list {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+
+}
+
+.items-list a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.course-item {
+    height: 350px;
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.568);
+
+}
+
+.course-item img {
+    width: 250px;
+    transition: all 1s ease;
+
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.course-item img:hover {
+
+    transition: all 1s ease;
+
+    padding: 10px;
+    object-fit: cover;
+
+}
+
+.course-item h2 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: start;
+}
+
+.course-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.course-main {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .side {
+        display: block;
+        width: 100px;
+        font-size: 30px;
+        z-index: 2;
+    }
+
+    .contain {
+
+        background-color: white;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        box-shadow: 2px 2px 10px black;
+
+    }
+
+    .nav {
+
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: -100%;
+        transition: all 1s linear;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+        width: 100%;
+        height: 110vh;
+
+        background-color: rgba(255, 68, 0, 0.733);
+    }
+
+    .nav a {
+        text-decoration: none;
+        font-weight: 500;
+        padding-top: 60px;
+        color: white;
+
+
+    }
+
+    .nav.active {
+        position: absolute;
+        left: 0;
+        transition: all 1s linear;
+
+    }
+
+    .course-main {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .categorise {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .course-main {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .categorise {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        text-align: center;
+        gap: 40px;
+    }
+}
+
+
+.course-nav {
+
+    display: flex;
+    background-color: white;
+    width: 60%;
+    height: 60px;
+    padding:10px 30px;
+    margin-left: 40px;
+   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.219);
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.course-nav p {
+    color:black;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    transition: all 1s ease;
+
+}
+.active{
+    background-color: #fb873f;
+}
+
+
+.c-main {
+
+margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+.c1 {
+    display: block;
+}
+
+.c1 h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.c1 p{
+    width: 60%;
+    text-align: justify;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.644);
+}
+.c2-course h2{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.c2-course{
+    box-shadow: 1px 1px 2px black;
+    width: 60%;
+    margin-top: 50px;
+}
+.c2-course ul{
+list-style-type: none;
+}
+.minus{
+    display: none;
+}
+.c2-course ul li{
+display: flex;
+padding:20px 40px;
+gap: 20px;
+justify-content: space-between;
+align-items: center;    
+border-bottom: 1px solid;
+
+}
+.c2-course ul li:nth-child(odd){
+    background-color:aliceblue;
+}
+.c2-course ul li:hover{
+    background-color:#fb873f31;
+}
+.c2 {
+    display: none;
+}
+.feedback-main{
+    display: flex;
+gap: 100px;
+align-items: center;
+}
+.feedback1{
+   
+    box-shadow: 1px 1px 2px black;
+    width: 18%;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.feedback2 p{
+    border: 1px solid black;
+
+    width: 300px;
+    height: 10px;
+   
+    border-radius: 20px;
+   position: relative;
+}
+
+
+
+
+.feedback2{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.p1::after{
+    position: absolute;
+    content: '';
+left: 0;
+top: 0;
+border-radius: 250px;
+background-color: #fb873f;
+width: 270px;
+height: 8px;
+}
+.p2::after{
+position: absolute;
+    content: '';
+left: 0;
+top: 0;
+
+border-radius: 200px;
+background-color: #fb873f;
+width: 200px;
+height: 8px;
+}
+.p3::after{
+    position: absolute;
+        content: '';
+    left: 0;
+    top: 0;
+    
+    border-radius: 150px;
+    background-color: #fb873f;
+    width: 150px;
+    height: 8px;
+    }.p4::after{
+        position: absolute;
+            content: '';
+        left: 0;
+        top: 0;
+        
+        border-radius: 100px;
+        background-color: #fb873f;
+        width: 100px;
+        height: 8px;
+        }.p5::after{
+            position: absolute;
+                content: '';
+            left: 0;
+            top: 0;
+            
+            border-radius: 80px;
+            background-color: #fb873f;
+            width: 50px;
+            height: 8px;
+            }
+.feedback2-flex{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.feedbacks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 400px;
+  
+    overflow-y: scroll;
+    gap:10px;
+    width: 70%;
+}
+.feedbacks h2{
+    font-weight: 600;
+}
+.feedbacks h4{
+    color: rgba(0, 0, 0, 0.644);
+
+}
+.feedbacks p{
+    width: 60%;
+    text-align: justify;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.c3 {
+    display: none;
+}
+
+.c4 {
+    display: none;
+}
+
+.c3 h2{
+    font-weight: 500;
+}
+.c3-p{
+    display: flex;
+    gap: 30px;
+
+}
+.c3 p{
+    margin-top: 15px;
+    width: 50%;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.644);
+
+}
+.instructor-dt h2{
+    font-weight: 200;
+    font-size: 25px;
+
+}
+.instructor-dt p{
+    font-weight: 200;
+
+}
+.instructor-dt img{
+    width: 100px;
+    height: 100px;
+    background-color: #fb873f;
+    border-radius: 100%;
+}
+.instructor-dt{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+    
+    gap: 10px;
+    width: 60%;
+  padding: 20px;
+    text-align: start;
+}
+.feedback-form h3{
+text-align: center;
+font-weight: 400;
+font-size: 25px;
+margin: 20px;
+color: #fb873f;
+}
+.feedback-form input{
+
+    width: 70%;
+    height: 40px;
+}
+.feedback-form textarea{
+    width: 70%;
+    height: 200px;
+}
+.feedback-form button{
+    background-color: #fb873f;
+color: aliceblue;
+    width: 70%;
+    height: 40px;
+    border: 1px solid aliceblue;
+}
+
+.coures-head1{
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+}
+.course-detail{
+    margin-top: 20px;
+    flex-basis: 60%;
+
+}
+.course-detail h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.course-detail p{
+    margin-top: 10px;
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.349);
+}
+.video{
+    background-color: #fb873f56;
+    height: 480px;
+}
+.categorise-flex{
+    margin:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+.categorise-flex span{
+    font-size: 13px;
+}
+
+.categorise-flex img{
+background-color: #fb873f;
+width: 60px;
+height: 60px;
+border-radius: 30px;
+}
+
+.enroll{
+margin-top: 30px;
+border: 1px solid rgba(0, 0, 0, 0.356);
+border-radius: 5px;
+    flex-basis: 30%;
+
+    height: 125vh;
+    align-items: center;
+}
+.enroll-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+ 
+}
+.enroll-details h2{
+
+    font-size: 35px;
+
+}
+.enroll-details h2 span{
+font-size: 15px;
+text-decoration: line-through;
+color: rgba(0, 0, 0, 0.336);
+
+}
+
+.enroll-details > span{
+    background-color: #fb873f;
+    padding:10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: white;
+
+}
+
+
+.enroll h3{
+    color: red;
+    margin-left: 45px;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+.btn button{
+    background-color: #fb873fa1;
+    border: 1px solid;
+    padding:20px 120px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-top: 25px;
+    font-size: 15px;
+    
+
+}
+.enroll-list ul{
+    list-style-type: none;
+    margin: 50px;
+
+ }
+.enroll-list ul li{
+border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,1fr);
+padding-top: 25px;
+column-gap: 40px; 
+position: relative;
+top: -30px;
+}

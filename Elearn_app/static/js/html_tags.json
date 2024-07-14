@@ -1,0 +1,573 @@
+[
+    {
+        "tag": "a",
+        "description": "Defines a hyperlink, which is used to link from one page to another or to an element within the current page.",
+        "example": "<a href=\"https://example.com\">Example</a>"
+    },
+    {
+        "tag": "abbr",
+        "description": "Defines an abbreviation or acronym, which browsers usually render with a dotted underline or a dotted border.",
+        "example": "<abbr title=\"World Health Organization\">WHO</abbr>"
+    },
+    {
+        "tag": "address",
+        "description": "Defines contact information for the author or owner of a document or an article.",
+        "example": "<address>Written by John Doe.<br>Visit us at:<br>Example.com<br>Box 564, Disneyland<br>USA</address>"
+    },
+    {
+        "tag": "area",
+        "description": "Defines an area inside an image map that has clickable areas.",
+        "example": "<img src=\"planets.gif\" width=\"145\" height=\"126\" alt=\"Planets\" usemap=\"#planetmap\"><map name=\"planetmap\"><area shape=\"rect\" coords=\"0,0,82,126\" alt=\"Sun\" href=\"sun.htm\"><area shape=\"circle\" coords=\"90,58,3\" alt=\"Mercury\" href=\"mercur.htm\"><area shape=\"circle\" coords=\"124,58,8\" alt=\"Venus\" href=\"venus.htm\"></map>"
+    },
+    {
+        "tag": "article",
+        "description": "Defines an article in a document, such as a blog post or news story.",
+        "example": "<article><h1>Article Title</h1><p>Article content goes here.</p></article>"
+    },
+    {
+        "tag": "aside",
+        "description": "Defines content aside from the content (like a sidebar) and should be related to the surrounding content.",
+        "example": "<p>Some text.</p><aside><h4>Related information</h4><p>Some related information here.</p></aside><p>Some more text.</p>"
+    },
+    {
+        "tag": "audio",
+        "description": "Defines sound or audio content in an HTML document.",
+        "example": "<audio controls><source src=\"horse.ogg\" type=\"audio/ogg\"><source src=\"horse.mp3\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio>"
+    },
+    {
+        "tag": "b",
+        "description": "Defines bold text.",
+        "example": "<p>This is <b>bold</b> text.</p>"
+    },
+    {
+        "tag": "base",
+        "description": "Specifies the base URL/target for all relative URLs in a document.",
+        "example": "<head><base href=\"https://www.example.com/images/\"><img src=\"stickman.gif\"></head>"
+    },
+    {
+        "tag": "bdi",
+        "description": "Isolates a part of text that might be formatted in a different direction from other text outside it.",
+        "example": "<p>This is a <bdi>Test</bdi> for bdi element.</p>"
+    },
+    {
+        "tag": "bdo",
+        "description": "Overrides the current text direction.",
+        "example": "<p>This is <bdo dir=\"rtl\">a test for rtl</bdo> and is the opposite of bdo.</p>"
+    },
+    {
+        "tag": "blockquote",
+        "description": "Defines a section that is quoted from another source.",
+        "example": "<blockquote cite=\"https://www.example.com\">This is a quoted text.</blockquote>"
+    },
+    {
+        "tag": "body",
+        "description": "Defines the document's body, which contains the content that is directly viewable in the browser window.",
+        "example": "<body><h1>Heading</h1><p>Paragraph.</p></body>"
+    },
+    {
+        "tag": "br",
+        "description": "Defines a single line break.",
+        "example": "<p>This is<br>a line break.</p>"
+    },
+    {
+        "tag": "button",
+        "description": "Defines a clickable button.",
+        "example": "<button onclick=\"alert('Hello!')\">Click me</button>"
+    },
+    {
+        "tag": "canvas",
+        "description": "Defines a region in HTML for graphics.",
+        "example": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>"
+    },
+    {
+        "tag": "caption",
+        "description": "Defines a table caption.",
+        "example": "<table><caption>Monthly savings</caption><tr><th>Month</th><th>Savings</th></tr><tr><td>January</td><td>$100</td></tr></table>"
+    },
+    {
+        "tag": "cite",
+        "description": "Defines the title of a work, such as a book or movie.",
+        "example": "<p>According to <cite>The New York Times</cite>, the study is flawed.</p>"
+    },
+    {
+        "tag": "code",
+        "description": "Defines a piece of computer code.",
+        "example": "<p>Use the <code>print()</code> function to display text.</p>"
+    },
+    {
+        "tag": "col",
+        "description": "Defines column properties for each column within a <colgroup> element.",
+        "example": "<table><colgroup><col span=\"2\" style=\"background-color:red\"><col style=\"background-color:yellow\"></colgroup><tr><th>ISBN</th><th>Title</th><th>Price</th></tr><tr><td>3476896</td><td>My first HTML</td><td>$53.99</td></tr></table>"
+    },
+    {
+        "tag": "colgroup",
+        "description": "Specifies a group of one or more columns in a table for formatting.",
+        "example": "<table><colgroup><col span=\"2\" style=\"background-color:red\"><col style=\"background-color:yellow\"></colgroup><tr><th>ISBN</th><th>Title</th><th>Price</th></tr><tr><td>3476896</td><td>My first HTML</td><td>$53.99</td></tr></table>"
+    },
+    {
+        "tag": "data",
+        "description": "Links a piece of content with a machine-readable translation.",
+        "example": "<p>He got <data value=\"18000\">$18,000</data> as a bonus.</p>"
+    },
+    {
+        "tag": "datalist",
+        "description": "Specifies a list of pre-defined options for input controls.",
+        "example": "<input list=\"browsers\"><datalist id=\"browsers\"><option value=\"Chrome\"><option value=\"Firefox\"><option value=\"Internet Explorer\"><option value=\"Opera\"><option value=\"Safari\"></datalist>"
+    },
+    {
+        "tag": "dd",
+        "description": "Defines a description or value for a term (<dt>) in a description list (<dl>).",
+        "example": "<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"
+    },
+    {
+        "tag": "del",
+        "description": "Defines text that has been deleted from a document.",
+        "example": "<p>My favorite color is <del>blue</del> red.</p>"
+    },
+    {
+        "tag": "details",
+        "description": "Defines additional details that the user can view or hide.",
+        "example": "<details><summary>Click me</summary><p>Additional details.</p></details>"
+    },
+    {
+        "tag": "dfn",
+        "description": "Defines a definition term.",
+        "example": "<p>The <dfn>HTML</dfn> specification is maintained by the W3C.</p>"
+    },
+    {
+        "tag": "dialog",
+        "description": "Defines a dialog box or window.",
+        "example": "<dialog open>Do you want to delete this file?</dialog>"
+    },
+    {
+        "tag": "div",
+        "description": "Defines a division or a section in an HTML document.",
+        "example": "<div>This is a division.</div>"
+    },
+    {
+        "tag": "dl",
+        "description": "Defines a description list, which groups terms (<dt>) and their descriptions (<dd>).",
+        "example": "<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"
+    },
+    {
+        "tag": "dt",
+        "description": "Defines a term (an item) in a description list (<dl>).",
+        "example": "<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"
+    },
+    {
+        "tag": "em",
+        "description": "Defines emphasized text.",
+        "example": "<p>This is <em>emphasized</em> text.</p>"
+    },
+    {
+        "tag": "embed",
+        "description": "Defines a container for an external application or interactive content (e.g., a plugin).",
+        "example": "<embed src=\"helloworld.swf\" width=\"200\" height=\"100\">"
+    },
+    {
+        "tag": "fieldset",
+        "description": "Groups related elements in a form.",
+        "example": "<fieldset><legend>Personal information:</legend>Name: <input type=\"text\"><br>Email: <input type=\"text\"><br></fieldset>"
+    },
+    {
+        "tag": "figcaption",
+        "description": "Defines a caption for a <figure> element.",
+        "example": "<figure><img src=\"pic_trulli.jpg\" alt=\"Trulli\"><figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption></figure>"
+    },
+    {
+        "tag": "figure",
+        "description": "Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.",
+        "example": "<figure><img src=\"pic_trulli.jpg\" alt=\"Trulli\"><figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption></figure>"
+    },
+    {
+        "tag": "footer",
+        "description": "Defines a footer for a document or section.",
+        "example": "<footer><p>Posted by: John Doe<br>Contact information: <a href=\"mailto:someone@example.com\">someone@example.com</a>.</p></footer>"
+    },
+    {
+        "tag": "form",
+        "description": "Defines an HTML form for user input.",
+        "example": "<form action=\"submit-form\" method=\"post\"><label for=\"fname\">First name:</label><input type=\"text\" id=\"fname\" name=\"fname\"><input type=\"submit\" value=\"Submit\"></form>"
+    },
+    {
+        "tag": "h1",
+        "description": "Defines HTML heading level 1.",
+        "example": "<h1>Main heading</h1>"
+    },
+    {
+        "tag": "h2",
+        "description": "Defines HTML heading level 2.",
+        "example": "<h2>Subheading</h2>"
+    },
+    {
+        "tag": "h3",
+        "description": "Defines HTML heading level 3.",
+        "example": "<h3>Sub-subheading</h3>"
+    },
+    {
+        "tag": "h4",
+        "description": "Defines HTML heading level 4.",
+        "example": "<h4>Sub-sub-subheading</h4>"
+    },
+    {
+        "tag": "h5",
+        "description": "Defines HTML heading level 5.",
+        "example": "<h5>Sub-sub-sub-subheading</h5>"
+    },
+    {
+        "tag": "h6",
+        "description": "Defines HTML heading level 6.",
+        "example": "<h6>Sub-sub-sub-sub-subheading</h6>"
+    },
+    {
+        "tag": "head",
+        "description": "Contains meta information about the HTML document, such as its title, scripts, and style sheets.",
+        "example": "<head><title>Page title</title><link rel=\"stylesheet\" href=\"styles.css\"></head>"
+    },
+    {
+        "tag": "header",
+        "description": "Defines a header for a document or section.",
+        "example": "<header><h1>Logo or heading</h1><nav><a href=\"/home\">Home</a> | <a href=\"/about\">About</a></nav></header>"
+    },
+    {
+        "tag": "hr",
+        "description": "Defines a thematic break or horizontal rule.",
+        "example": "<p>This is a paragraph.</p><hr><p>This is another paragraph.</p>"
+    },
+    {
+        "tag": "html",
+        "description": "Defines the root of an HTML document.",
+        "example": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><title>Document</title></head><body><h1>Hello, world!</h1></body></html>"
+    },
+    {
+        "tag": "i",
+        "description": "Defines italicized text.",
+        "example": "<p>This is <i>italicized</i> text.</p>"
+    },
+    {
+        "tag": "iframe",
+        "description": "Defines an inline frame, which embeds another HTML page into the current page.",
+        "example": "<iframe src=\"https://www.example.com\"></iframe>"
+    },
+    {
+        "tag": "img",
+        "description": "Defines an image.",
+        "example": "<img src=\"image.jpg\" alt=\"Description of image\">"
+    },
+    {
+        "tag": "input",
+        "description": "Defines an input control, such as a text field, checkbox, radio button, or submit button.",
+        "example": "<input type=\"text\" name=\"fname\">"
+    },
+    {
+        "tag": "ins",
+        "description": "Defines a text that has been inserted into a document.",
+        "example": "<p>My favorite color is <ins>blue</ins> red.</p>"
+    },
+    {
+        "tag": "kbd",
+        "description": "Defines keyboard input.",
+        "example": "<p>Use <kbd>Ctrl</kbd>+<kbd>C</kbd> to copy text.</p>"
+    },
+    {
+        "tag": "label",
+        "description": "Defines a label for an <input>, <select>, <textarea>, or <button> element.",
+        "example": "<label for=\"username\">Username:</label><input type=\"text\" id=\"username\" name=\"username\">"
+    },
+    {
+        "tag": "legend",
+        "description": "Defines a caption for a <fieldset> element.",
+        "example": "<fieldset><legend>Personal information:</legend>Name: <input type=\"text\"><br>Email: <input type=\"text\"><br></fieldset>"
+    },
+    {
+        "tag": "li",
+        "description": "Defines a list item.",
+        "example": "<ul><li>Item 1</li><li>Item 2</li></ul>"
+    },
+    {
+        "tag": "link",
+        "description": "Defines the relationship between a document and an external resource (most used to link to stylesheets).",
+        "example": "<head><link rel=\"stylesheet\" href=\"styles.css\"></head>"
+    },
+    {
+        "tag": "main",
+        "description": "Defines the main content of a document.",
+        "example": "<main><h1>Main content</h1><p>Content goes here.</p></main>"
+    },
+    {
+        "tag": "map",
+        "description": "Defines a client-side image map with clickable areas.",
+        "example": "<img src=\"planets.gif\" width=\"145\" height=\"126\" alt=\"Planets\" usemap=\"#planetmap\"><map name=\"planetmap\"><area shape=\"rect\" coords=\"0,0,82,126\" alt=\"Sun\" href=\"sun.htm\"><area shape=\"circle\" coords=\"90,58,3\" alt=\"Mercury\" href=\"mercur.htm\"><area shape=\"circle\" coords=\"124,58,8\" alt=\"Venus\" href=\"venus.htm\"></map>"
+    },
+    {
+        "tag": "mark",
+        "description": "Defines marked or highlighted text.",
+        "example": "<p>Use the <mark>mark</mark> element to highlight text.</p>"
+    },
+    {
+        "tag": "meta",
+        "description": "Defines metadata about an HTML document, such as character set, page description, keywords, author, and viewport settings.",
+        "example": "<head><meta charset=\"UTF-8\"><meta name=\"description\" content=\"Free Web tutorials\"><meta name=\"keywords\" content=\"HTML, CSS, JavaScript\"><meta name=\"author\" content=\"John Doe\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head>"
+    },
+    {
+        "tag": "meter",
+        "description": "Defines a scalar measurement within a known range, or a fractional value.",
+        "example": "<p>My progress: <meter value=\"2\" min=\"0\" max=\"10\">2 out of 10</meter></p>"
+    },
+    {
+        "tag": "nav",
+        "description": "Defines navigation links.",
+        "example": "<nav><a href=\"/home\">Home</a> | <a href=\"/about\">About</a></nav>"
+    },
+    {
+        "tag": "noscript",
+        "description": "Defines alternative content to display when a script is not executed.",
+        "example": "<noscript><p>This page requires JavaScript to function properly.</p></noscript>"
+    },
+    {
+        "tag": "object",
+        "description": "Defines an embedded object, such as an image, audio, video, Java applet, ActiveX, PDF, or Flash.",
+        "example": "<object data=\"helloworld.swf\" width=\"200\" height=\"100\"></object>"
+    },
+    {
+        "tag": "ol",
+        "description": "Defines an ordered list.",
+        "example": "<ol><li>Item 1</li><li>Item 2</li></ol>"
+    },
+    {
+        "tag": "optgroup",
+        "description": "Defines a group of related options in a dropdown list (<select> element).",
+        "example": "<select name=\"cars\"><optgroup label=\"Swedish Cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></optgroup><optgroup label=\"German Cars\"><option value=\"mercedes\">Mercedes</option><option value=\"audi\">Audi</option></optgroup></select>"
+    },
+    {
+        "tag": "option",
+        "description": "Defines an option in a dropdown list (<select> element).",
+        "example": "<select name=\"cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></select>"
+    },
+    {
+        "tag": "output",
+        "description": "Defines the result of a calculation or user action.",
+        "example": "<form oninput=\"result.value=parseInt(a.value)+parseInt(b.value)\"><input type=\"range\" id=\"a\" value=\"50\"> + <input type=\"number\" id=\"b\" value=\"50\"> = <output name=\"result\" for=\"a b\">100</output></form>"
+    },
+    {
+        "tag": "p",
+        "description": "Defines a paragraph.",
+        "example": "<p>This is a paragraph.</p>"
+    },
+    {
+        "tag": "param",
+        "description": "Defines parameters for an <object> element.",
+        "example": "<object data=\"helloworld.swf\"><param name=\"autoplay\" value=\"true\"></object>"
+    },
+    {
+        "tag": "picture",
+        "description": "Defines a container for multiple image resources.",
+        "example": "<picture><source srcset=\"image.jpg\" media=\"(min-width: 650px)\"><img src=\"image-small.jpg\" alt=\"Description of image\"></picture>"
+    },
+    {
+        "tag": "pre",
+        "description": "Defines preformatted text, which preserves both spaces and line breaks.",
+        "example": "<pre>Text in a pre element    is displayed in a fixed-width font,    and it preserves both      spaces and\n      line breaks</pre>"
+    },
+    {
+        "tag": "progress",
+        "description": "Represents the progress of a task, such as a download or file transfer.",
+        "example": "<progress value=\"22\" max=\"100\">22%</progress>"
+    },
+    {
+        "tag": "q",
+        "description": "Defines a short inline quotation.",
+        "example": "<p>According to <q>The New York Times</q>, the study is flawed.</p>"
+    },
+    {
+        "tag": "rp",
+        "description": "Defines what to show in browsers that do not support ruby annotations.",
+        "example": "<p>The<ruby>漢<rp>(</rp><rt>Kan</rt><rp>)</rp></ruby> language.</p>"
+    },
+    {
+        "tag": "rt",
+        "description": "Defines an explanation or pronunciation of characters (for East Asian typography).",
+        "example": "<p>The<ruby>漢<rp>(</rp><rt>Kan</rt><rp>)</rp></ruby> language.</p>"
+    },
+    {
+        "tag": "ruby",
+        "description": "Defines a ruby annotation (for East Asian typography).",
+        "example": "<p>The<ruby>漢<rp>(</rp><rt>Kan</rt><rp>)</rp></ruby> language.</p>"
+    },
+    {
+        "tag": "s",
+        "description": "Defines text that is no longer correct, accurate, or relevant.",
+        "example": "<p><s>Striked-through</s> text.</p>"
+    },
+    {
+        "tag": "samp",
+        "description": "Defines sample output from a computer program.",
+        "example": "<p>User input: <samp>john</samp></p>"
+    },
+    {
+        "tag": "script",
+        "description": "Defines a client-side script, such as JavaScript.",
+        "example": "<script>document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";</script>"
+    },
+    {
+        "tag": "section",
+        "description": "Defines a section in a document, such as chapters, headers, footers, or any other sections of the document.",
+        "example": "<section><h1>Section Title</h1><p>Section content goes here.</p></section>"
+    },
+    {
+        "tag": "select",
+        "description": "Defines a dropdown list.",
+        "example": "<select name=\"cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></select>"
+    },
+    {
+        "tag": "small",
+        "description": "Defines smaller text.",
+        "example": "<p>This is <small>small</small> text.</p>"
+    },
+    {
+        "tag": "source",
+        "description": "Defines multiple media resources for <picture>, <audio>, and <video> elements.",
+        "example": "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\">Your browser does not support the video tag.</video>"
+    },
+    {
+        "tag": "span",
+        "description": "Defines a section in a document that is used for styling purposes with CSS.",
+        "example": "<p><span style=\"color:blue\">This is blue text.</span></p>"
+    },
+    {
+        "tag": "strong",
+        "description": "Defines important text that is typically displayed in bold.",
+        "example": "<p>This is <strong>important</strong> text.</p>"
+    },
+    {
+        "tag": "style",
+        "description": "Defines style information for an HTML document, which can include CSS or other style rules.",
+        "example": "<style>body {background-color: linen;}</style>"
+    },
+    {
+        "tag": "sub",
+        "description": "Defines subscripted text.",
+        "example": "<p>This is <sub>subscripted</sub> text.</p>"
+    },
+    {
+        "tag": "summary",
+        "description": "Defines a visible heading for a <details> element.",
+        "example": "<details><summary>Click me</summary><p>Additional details.</p></details>"
+    },
+    {
+        "tag": "sup",
+        "description": "Defines superscripted text.",
+        "example": "<p>This is <sup>superscripted</sup> text.</p>"
+    },
+    {
+        "tag": "table",
+        "description": "Defines a table.",
+        "example": "<table><tr><th>Header 1</th><th>Header 2</th></tr><tr><td>Cell 1</td><td>Cell 2</td></tr></table>"
+    },
+    {
+        "tag": "tbody",
+        "description": "Groups the body content in a table.",
+        "example": "<table><tbody><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td></tr></tbody></table>"
+    },
+    {
+        "tag": "td",
+        "description": "Defines a cell in a table.",
+        "example": "<table><tr><td>Cell 1</td><td>Cell 2</td></tr></table>"
+    },
+    {
+        "tag": "template",
+        "description": "Defines a container to hold HTML content hidden from the user, which can be cloned and inserted into the DOM using JavaScript.",
+        "example": "<template><h1>Template Content</h1></template>"
+    },
+    {
+        "tag": "textarea",
+        "description": "Defines a multiline input control (textarea) within a form.",
+        "example": "<textarea rows=\"4\" cols=\"50\">Enter text here...</textarea>"
+    },
+    {
+        "tag": "tfoot",
+        "description": "Groups the footer content in a table.",
+        "example": "<table><tfoot><tr><td>Total</td><td>$180</td></tr></tfoot></table>"
+    },
+    {
+        "tag": "th",
+        "description": "Defines a header cell in a table.",
+        "example": "<table><tr><th>Header 1</th><th>Header 2</th></tr></table>"
+    },
+    {
+        "tag": "thead",
+        "description": "Groups the header content in a table.",
+        "example": "<table><thead><tr><th>Header 1</th><th>Header 2</th></tr></thead></table>"
+    },
+    {
+        "tag": "time",
+        "description": "Defines a date or time.",
+        "example": "<p>Meeting time: <time datetime=\"2023-01-01T12:00\">January 1, 2023 at 12:00 PM</time></p>"
+    },
+    {
+        "tag": "title",
+        "description": "Defines the document title, which is shown in the browser's title bar or tab.",
+        "example": "<head><title>Document Title</title></head>"
+    },
+    {
+        "tag": "tr",
+        "description": "Defines a row in a table.",
+        "example": "<table><tr><td>Cell 1</td><td>Cell 2</td></tr></table>"
+    },
+    {
+        "tag": "track",
+        "description": "Defines text tracks for <audio> or <video> elements.",
+        "example": "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><track src=\"subtitles_en.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\"></video>"
+    },
+    {
+        "tag": "u",
+        "description": "Defines text that should be stylistically different from normal text.",
+        "example": "<p>This is <u>underlined</u> text.</p>"
+    },
+    {
+        "tag": "ul",
+        "description": "Defines an unordered list.",
+        "example": "<ul><li>Item 1</li><li>Item 2</li></ul>"
+    },
+    {
+        "tag": "var",
+        "description": "Defines a variable.",
+        "example": "<p>The area of a triangle is <var>a</var> = 1/2 * <var>b</var> * <var>h</var></p>"
+    },
+    {
+        "tag": "video",
+        "description": "Defines a video.",
+        "example": "<video controls><source src=\"movie.mp4\" type=\"video/mp4\">Your browser does not support the video tag.</video>"
+    },
+    {
+        "tag": "wbr",
+        "description": "Defines a possible line break opportunity in case a word needs to be broken across lines.",
+        "example": "<p>This text is long and might break: <wbr>ABCDEFGHIJKLMNOPQRSTUVWXYZ.</p>"
+    },
+
+    {
+        "tag": "color",
+        "description": "Specifies the text color for an element.",
+        "example": "color: red;"
+    },
+    {
+        "tag": "font-family",
+        "description": "Specifies the font family for text.",
+        "example": "font-family: Arial, sans-serif;"
+    },
+    {
+        "tag": "font-size",
+        "description": "Specifies the font size.",
+        "example": "font-size: 16px;"
+    },
+    {
+        "tag": "font-weight",
+        "description": "Specifies the font weight (e.g., bold or normal).",
+        "example": "font-weight: bold;"
+    },
+    {
+        "tag": "text-align",
+        "description": "Specifies the horizontal alignment of text.",
+        "example": "text-align: center;"
+    }
+]
